@@ -9,7 +9,7 @@ import Header from "../Components/Header";
 const Details = () => {
   const { id } = useParams();
 
-  const { data, loading, error } = useFetch("https://meetup-backend-rho.vercel.app/");
+  const { data, loading, error } = useFetch("https://meetup-backend-rho.vercel.app/events");
 
   console.log(id);
   return (
