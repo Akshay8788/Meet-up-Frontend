@@ -6,7 +6,7 @@ const Home = () => {
   const [saveddata, setsavedData] = useState([]);
 
 
-  const { data, error, loading } = useFetch("http://localhost:3000/events");
+  const { data, error, loading } = useFetch("https://meetup-backend-rho.vercel.app/");
   const set = () => {
     if (data) {
       console.log(data);
